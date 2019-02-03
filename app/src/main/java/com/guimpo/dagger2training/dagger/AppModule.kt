@@ -4,6 +4,7 @@ import com.guimpo.dagger2training.App
 import com.guimpo.dagger2training.domain.User
 import dagger.Module
 import dagger.Provides
+import javax.inject.Singleton
 
 @Module
 class AppModule(var app: App) {
@@ -12,6 +13,7 @@ class AppModule(var app: App) {
     fun providesApp(): App = app
 
     @Provides
+    @Singleton
     fun provideUser(): User = User()
 
 }
