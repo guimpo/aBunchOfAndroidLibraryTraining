@@ -1,6 +1,7 @@
 package com.guimpo.dagger2training.dagger
 
 import com.guimpo.dagger2training.App
+import com.guimpo.dagger2training.domain.User
 import dagger.Module
 import dagger.Provides
 
@@ -9,5 +10,8 @@ class AppModule(var app: App) {
 
     @Provides
     fun providesApp(): App = app
+
+    @Provides
+    fun provideUser(): User = User()
 
 }
