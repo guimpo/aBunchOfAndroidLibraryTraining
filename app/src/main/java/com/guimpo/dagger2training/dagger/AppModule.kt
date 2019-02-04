@@ -1,7 +1,7 @@
 package com.guimpo.dagger2training.dagger
 
 import com.guimpo.dagger2training.App
-import com.guimpo.dagger2training.domain.User
+import com.guimpo.dagger2training.domain.entity.User
 import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton

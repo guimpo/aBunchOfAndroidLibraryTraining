@@ -3,7 +3,7 @@ package com.guimpo.dagger2training
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import com.guimpo.dagger2training.domain.User
+import com.guimpo.dagger2training.domain.entity.User
 import javax.inject.Inject
 
 class MainActivity : AppCompatActivity() {
