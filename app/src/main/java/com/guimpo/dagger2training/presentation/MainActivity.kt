@@ -10,6 +10,10 @@ import com.guimpo.dagger2training.data.MemoryDataBase
 import com.guimpo.dagger2training.domain.entity.User
 import kotlinx.android.synthetic.main.activity_main.*
 import javax.inject.Inject
+import android.content.Intent
+import com.guimpo.dagger2training.presentation.quotes.QuotesActivity
+import java.util.*
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -38,5 +42,11 @@ class MainActivity : AppCompatActivity() {
         var products = MemoryDataBase().list() as ArrayList
         adapter = ProductRecyclerAdapter(products)
         rv.adapter = adapter
+
+        Timer().schedule(object : TimerTask() {
+            override fun run() {
+                startActivity(Intent(applicationContext, QuotesActivity::class.java))
+            }
+        }, 3000)
     }
 }
