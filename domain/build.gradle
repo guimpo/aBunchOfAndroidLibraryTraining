@@ -1,0 +1,14 @@
+apply plugin: 'kotlin'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    // JUnit and Mockito
+    testImplementation 'junit:junit:4.12'
+    testImplementation 'org.mockito:mockito-inline:2.8.47'
+    testImplementation "org.jetbrains.kotlin:kotlin-test-junit:${kotlin_version}"
+}
+
+sourceCompatibility = "1.6"
+targetCompatibility = "1.6"
