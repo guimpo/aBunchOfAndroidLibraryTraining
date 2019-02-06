@@ -6,7 +6,7 @@ apply plugin: 'kotlin-kapt'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.guimpo.dagger2training"
+        applicationId "com.guimpo.shopping"
         minSdkVersion 22
         targetSdkVersion 28
         versionCode 1
