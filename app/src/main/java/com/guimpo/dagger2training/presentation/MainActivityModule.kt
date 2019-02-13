@@ -7,4 +7,5 @@ import dagger.Provides
 class MainActivityModule {
     @Provides
     fun provideString() = "provided by MainActivityModule XD"
+
 }
